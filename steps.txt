@@ -33,3 +33,13 @@ jobs:
         run: |
             flake8 example.py
 This code is to make Assistant 
+
+now perform these command and check action tab in github
+git status 
+git add .
+git commit -m "Intial commit"
+git push origin master 
+now check the action tab in github, if it show error than change code of example.py by following lint error elimination
+check it and correct till it run
+
+
