@@ -61,4 +61,11 @@ git merge multiplication
 To test function(unittest)
 create new file test_unit.py and enter the code
 To run, write the command: 
+git status
+git add .
+git commit -m "add unittest"
+git push origin master
 Add new job in lint.yaml
+Run this as above
+
+to make two job run sequentially, add this line in lint.yaml in job of unittest: needs: lint
