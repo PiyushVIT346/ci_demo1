@@ -1,6 +1,11 @@
 name: CI demo
 
-on: push
+on: 
+    push:
+        branches:
+            - master
+    pull_request:
+
 
 jobs:
   lint:
@@ -27,3 +32,15 @@ jobs:
 
       - name: Run flake8
         run: flake8 example.py
+  unit_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: code Checkout
+        uses: actions/checkout@v3
+      - name: python code
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+      - name: run unit test
+        run: |
+          python -m unittest discover

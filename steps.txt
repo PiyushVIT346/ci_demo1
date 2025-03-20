@@ -43,3 +43,22 @@ now check the action tab in github, if it show error than change code of example
 check it and correct till it run
 
 
+change the code to add pull functioning to be also executed. 
+make and check new branch and switch new brach as command:
+Check the Current Branch: git branch
+Create and Switch to the New Branch: git checkout -b multiplication
+Verify the Branch Creation: git branch
+Push the New Branch to Remote: git push origin multiplication
+Switch Back to Master Branch: git checkout master
+Switch Back to multiplication Branch: git checkout multiplication 
+
+
+merge multiplication branch and master branch
+git checkout master 
+git merge multiplication
+
+
+To test function(unittest)
+create new file test_unit.py and enter the code
+To run, write the command: 
+Add new job in lint.yaml

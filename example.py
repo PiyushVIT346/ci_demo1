@@ -8,7 +8,15 @@ def add(a, b):
     return a + b
 
 
+def mul(a, b):
+    """Returns the product of two numbers."""
+    return a * b
+
+
 greet("Anil")
 print(add(2, 3))
+print(mul(2, 3))
 
-# Ensure a blank line at the end of the file
+if __name__=="__main__":
+    print(add(3,5))
+    print(mul(3,5))
